@@ -1,0 +1,43 @@
+{
+  "name": "react-toolbet",
+  "version": "1.0.0",
+  "description": "This repo will assist in getting started with react tools. React ToolBelt provides necessary configurations to get started with React Project. This repo contains least configs for getting started with react projects It also includes folder structure to place all the reducers , actions , jsx, css logic.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,css,jsx,json} \" ",
+    "format:check": "prettier --list-different \"src/**/*.{js,css,jsx,json} \" ",
+    "lint": "eslint \"src/**/*.{js,jsx} \" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhupendra1011/react-toolbet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhupendra1011/react-toolbet/issues"
+  },
+  "homepage": "https://github.com/bhupendra1011/react-toolbet#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.5.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "parcel-bundler": "^1.9.7",
+    "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "@reach/router": "^1.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
