@@ -7,8 +7,11 @@
     "format": "prettier --write \"src/**/*.{js,css,jsx,json} \" ",
     "format:check": "prettier --list-different \"src/**/*.{js,css,jsx,json} \" ",
     "lint": "eslint \"src/**/*.{js,jsx} \" ",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel public/index.html"
+    "dev": "parcel src/index.html",
+    "test": "jest --silent",
+    "test:update": "jest --silent -u",
+    "test:watch": "jest --silent --watch",
+    "test:coverage": "jest --silent --coverage"
   },
   "repository": {
     "type": "git",
@@ -32,12 +35,16 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
     "parcel-bundler": "^1.9.7",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "react-test-renderer": "^16.5.1"
   },
   "dependencies": {
     "@reach/router": "^1.1.1",
+    "emotion": "^9.2.8",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.8"
   }
 }

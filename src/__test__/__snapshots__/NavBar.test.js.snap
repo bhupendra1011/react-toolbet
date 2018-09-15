@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshor 1`] = `
+<header
+  className="css-ik91wn"
+>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+  >
+    SITE HEADER HERE
+  </a>
+  <a
+    href="/details"
+    onClick={[Function]}
+  >
+    <span
+      aria-label="next-page"
+      role="img"
+    >
+      ➡️
+    </span>
+  </a>
+</header>
+`;

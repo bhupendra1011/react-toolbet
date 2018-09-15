@@ -1,21 +1,25 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { render } from "react-dom";
+import { Router, Link } from "@reach/router";
+import NavBar from "./NavBar";
 import "./styles.css";
+import LandingPage from "./LandingPage";
+import DetailsPage from "./DetailsPage";
 
 class App extends React.Component {
   render() {
     return (
-      <Fragment>
-        <header>
-          <h1> This is the site header</h1>
-        </header>
-        <main>
-          <p> Here components will mount !!!</p>
-        </main>
+      <div>
+        <NavBar />
+        {/* Routing Logic will change the different components here */}
+        <Router>
+          <LandingPage path="/" />
+          <DetailsPage path="/details" />
+        </Router>
         <footer>
           <span> This is the footer</span>
         </footer>
-      </Fragment>
+      </div>
     );
   }
 }
