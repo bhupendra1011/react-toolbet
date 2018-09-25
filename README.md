@@ -20,4 +20,6 @@ Tools Used :
 4) [Parcel](https://parceljs.org/): Bundler with almost Zero configurations required.
 5) [Reach Router](https://reach.tech/router): Accessbility rich React Router 
 6) [Babel](https://babeljs.io/): Helps in using tomorrow's JS in today's Browsers.
+7) [Emotion](https://emotion.sh/): Performant way of writing CSS in JS
+8) [Jest](https://jestjs.io/): Testing framework developed by [Facebook](https://github.com/facebook/react) for React Applications , has built in support for [istanbul](https://istanbul.js.org/)
 
