@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import "./styles.css";
 import LandingPage from "./LandingPage";
 import DetailsPage from "./DetailsPage";
+import Footer from "./Footer";
 
 class App extends React.Component {
   render() {
@@ -16,9 +17,7 @@ class App extends React.Component {
           <LandingPage path="/" />
           <DetailsPage path="/details" />
         </Router>
-        <footer>
-          <span> This is the footer</span>
-        </footer>
+        <Footer />
       </div>
     );
   }
