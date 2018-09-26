@@ -1,3 +1,5 @@
+/* site wide main css here , component styles to be included in react-emotion */
+
 header {
   display: flex;
   align-content: center;

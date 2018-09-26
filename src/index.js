@@ -4,9 +4,17 @@ import { Router, Link } from "@reach/router";
 import NavBar from "./NavBar";
 import "./styles.css";
 import LandingPage from "./LandingPage";
-import DetailsPage from "./DetailsPage";
+import Lodable from "react-loadable";
 import Footer from "./Footer";
 
+const loading = () => <h1> Loading solit code ...</h1>;
+// Lodable HOC resolves to promise which returns the lazy loaded component
+const LodableDetails = Lodable({
+  loader: () => import("./DetailsPage"),
+  loading: loading
+});
+
+// code splitting at the route level
 class App extends React.Component {
   render() {
     return (
@@ -15,7 +23,7 @@ class App extends React.Component {
         {/* Routing Logic will change the different components here */}
         <Router>
           <LandingPage path="/" />
-          <DetailsPage path="/details" />
+          <LodableDetails path="/details" />
         </Router>
         <Footer />
       </div>
