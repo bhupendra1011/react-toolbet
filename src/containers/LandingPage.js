@@ -25,24 +25,10 @@ class LandingPage extends React.Component {
   }
 }
 
-const mapStateToProps1 = ({ title, author, reviews, rating, isLoading }) => ({
-  title,
-  author,
-  reviews,
-  rating,
-  isLoading
-});
-
 const mapStateToProps = state => {
-  if (state.userDetails)
-    return {
-      title: state.userDetails.title,
-      author: state.userDetails.author,
-      rating: state.userDetails.rating,
-      reviews: state.userDetails.reviews,
-      isLoading: state.userDetails.isLoading
-    };
-  else return {};
+  if (state.userDetails) {
+    return state.userDetails;
+  } else return {};
 };
 
 const mapDispatchToProps = dispatch => ({
