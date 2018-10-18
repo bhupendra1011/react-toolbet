@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "react-emotion";
-import colors from "./colors";
+import colors from "../colors";
 
 const StyledFooter = styled("footer")`
   position: absolute;
