@@ -5,8 +5,12 @@ This repo contains least configs for getting started with react projects
 It also includes folder structure to place all the reducers , actions , jsx, css logic.
 
 ## How to Use :
+There are two branches in this repo :
+1) master : contains only react setup configurations
+2) withRedux : conntains React + Redux setup configurations
 
-Clone this repo
+Clone this repo with any of branch
+
 run : npm install
 start server : npm run dev
 
