@@ -12,6 +12,7 @@ There are two branches in this repo :
 Clone this repo with any of branch
 
 run : npm install
+
 start server : npm run dev
 
 ## Tools Used :
