@@ -5,7 +5,7 @@ const reducer = (state = null, action) => {
     case FETCH_USER_DETAILS:
       return {
         ...{
-          ...action.payload,
+          ...action.payload.data,
           isLoading: false
         }
       };

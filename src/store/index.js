@@ -1,11 +1,11 @@
 import { createStore, applyMiddleware, compose } from "redux";
-import thunk from "redux-thunk";
+import promiseMiddleware from "redux-promise";
 import reducer from "../reducers";
 
 const store = createStore(
   reducer,
   compose(
-    applyMiddleware(thunk),
+    applyMiddleware(promiseMiddleware),
     typeof window === "object" &&
     typeof window.devToolsExtension !== "undefined"
       ? window.devToolsExtension()

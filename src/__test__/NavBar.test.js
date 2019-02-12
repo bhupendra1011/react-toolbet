@@ -1,6 +1,6 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import NavBar from "../NavBar";
+import NavBar from "../components/NavBar";
 
 test("snapshor", () => {
   const c = create(<NavBar />);

@@ -2,16 +2,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "git.confirmSync": false,
   "window.zoomLevel": 1,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": true,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": false
-  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
